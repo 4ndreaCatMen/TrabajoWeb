@@ -1,0 +1,404 @@
+body{
+    background: linear-gradient(black,black,green);
+    
+}
+p{
+    color: aliceblue;
+    font-size: 5vh;
+    
+}
+
+.button-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.button-with-icon svg {
+    margin-left: 1vh; /* Espacio entre la palabra y el ícono */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 3vh;
+    justify-content: space-between;
+    background-color: rgba(90, 144, 114, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */  
+}
+
+.header-container p {
+    margin-left: 15vh;
+}
+
+#boton1{
+    margin-left: 7em;
+    background-color: greenyellow;
+    font-size: 2vh;
+    border-radius: 15px;
+    
+}
+
+#boton2{
+    margin-left: 3vh;
+    background-color: greenyellow;
+    font-size: 2vh;
+    border-radius: 15px;
+}
+
+.titulo{
+    display: grid;
+    text-align: center;
+    margin-left: 10vh; 
+}
+
+h3{
+    margin-top: -2em;
+}
+
+.timecode {
+    font-size: 6vh; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 5%;
+}
+
+.timecode::after {
+    content: "Code"; /* Agrega el texto "Code" después de "Time" */
+    color: greenyellow; /* Color verde para "Code" */
+}
+
+.mundo{
+    color: greenyellow;    
+}
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 200px); /* Cada cuadro tiene 200px de ancho */
+    grid-auto-rows: 150px; /* Cada cuadro tiene 150px de alto */
+    gap: 250px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */  
+    max-width: 1250px; /* Ancho maximo del contenedor */
+    
+   
+}
+
+.imagen-container {
+    
+    background-color: rgba(255, 255, 251, 0.799);
+    margin-top: 1vh;
+    height: 300px;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.imagen-container img {
+    width: 90%;
+    height: 80%;
+    margin-top: 1vh;
+    border: 2px solid rgb(119, 66, 66);
+    border-radius: 15px;
+}
+
+.conImagen{
+    height: 80%;
+}
+
+.Cursos{
+    color: aliceblue;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 2.8vh;
+ 
+}
+
+h4{
+    margin-top: -1px;
+}
+
+
+
+.code{
+    text-align: left;
+    margin-left: 4vh;
+}
+
+.timecode2::after {
+    content: "Code"; /* Agrega el texto "Code" después de "Time" */
+    color: greenyellow; /* Color verde para "Code" */
+    
+}
+
+
+
+.titulo2 {
+    display: grid;
+    text-align: center;
+    margin-left: 30vh;
+    margin-right: 10vh;
+}
+
+.timecode2 {
+    font-size: 6vh; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 5%; /* Margen superior */
+}
+
+.mundo2 {
+    color: greenyellow;
+}
+
+.mititulo {
+    font-size: 5vh; /* Tamaño de la fuente */
+    color: aliceblue; /* Color del texto */
+    margin-top: 1em; /* Ajuste del margen superior */
+    margin-right: -23vh;
+    letter-spacing: 5px;
+    
+}
+
+.inicio{
+    position: relative;
+    left: 48.5%;
+    margin-top: -5vh;
+
+}
+
+.imagen-container:hover{
+    transform: scale(1.15);
+    border-radius: 50px;
+    transition: all .8s ease-in-out;
+    box-shadow: 0px 0px 15px 15px #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
+  
+  }
+
+
+ /* Para pantalla de 16 a 27 pulgadas */
+  @media only screen and (min-width: 1540px) {
+    
+    body {
+           min-height: 120vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+       }
+   
+   .grid-container {
+       grid-template-columns: repeat(3, 1fr); 
+       gap: 20vh; /* Reduce el espacio entre los elementos */
+       justify-content: center;
+       margin-top: 5vh;
+       }
+
+
+   .Cursos {
+       margin-left: 12vh; 
+       margin-top: 4vh; /* Ajusta el margen superior */
+   }
+
+  
+   
+    .menu {
+    margin-right: 40vh; /* Margen derecho del menú */
+    }
+
+    .menu li {
+    margin-left: 10vh; /* Ajusta el espacio entre elementos del menú */
+    font-size: 3vh; /* Reduce el tamaño de fuente del menú */
+    }
+
+    .inicio{
+        position: relative;
+        left: 46%;
+        margin-top: -5vh;
+    
+    }
+   .mititulo{
+    position: relative;
+    font-size: 3vh;
+    left: -4vh;
+   
+   }
+
+   a{
+    position: relative;
+    margin-left: 3vh;
+   }
+
+    }
+
+    /* Para movil---- Xiami MI 11*/ 
+   @media only screen and (max-width: 767px) {
+    body {
+        min-height: 315vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .titulo, .titulo2 {
+        margin-bottom: 20px;
+        margin-right: 25%;
+    }
+    
+    .mititulo {
+        margin-bottom: 40px;
+        font-size: 3.5vh;
+        margin-right: 35%;
+    }
+
+    .titulo2{
+        margin-right: 70%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20%;
+        margin-top: 5vh;
+        margin-left: 2vh;
+        
+    }
+
+    .Cursos {
+        margin-top: 10vh; /* Ajusta el margen superior */
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+
+    
+ 
+    .imagen-container {
+    background-color: rgba(255, 255, 251, 0.799);
+    margin-top: 3vh;
+    height: 250px;
+    width: 320px;
+    border-radius: 15px;
+    text-align: center;
+    
+    }
+   
+    .imagen-container:hover{
+    transform: scale(1.10);
+    border-radius: 50px;
+    transition: all .8s ease-in-out;
+    box-shadow: 0px 0px 15px 15px #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
+  
+    }
+
+   
+    .inicio{
+        position: relative;
+        margin-top: 210%;
+        left: 17vh;
+
+    }
+    
+   }
+
+
+
+/*Para tablet IPad Mini*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    body {
+        min-height: 150vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */   
+        width: 85%;   
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        width:105%;
+    }    
+
+    .timecode {
+    font-size: 50px;
+    margin-left: 0px;
+    }
+    
+    .timecode2{
+    font-size: 50px; 
+    margin-left:-34vh;
+    
+    }
+
+    .mundo {
+    font-size: 15px;
+    margin-left: 1vh;
+    white-space: nowrap;
+    }
+
+    .mundo2 {
+        font-size: 15px;
+        margin-left: -33vh;
+        white-space: nowrap;
+    }
+
+    .titulo{
+    margin-left: 10px;
+    }
+    
+    .mititulo{
+
+    margin-top: 4%;
+    margin-bottom: 40px;
+    font-size: 3.5vh;
+    margin-right: 16%;
+    }
+
+    .titulo2 {
+    /* Ajusta el margen izquierdo */
+    font-size: 20px;
+    margin-left: 40vh;
+    margin-right: 50px;
+    }
+
+   
+    
+    .grid-container {
+    position: static;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10%; /* Reduce el espacio entre los elementos */
+    row-gap: 50%;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-right: 0;
+    margin-left:12vh;
+    }
+
+    
+        
+    .imagen-container {
+    background-color: rgba(255, 255, 251, 0.799);
+    margin-top: 3vh;
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center; 
+    }
+        
+    .imagen-container:hover{
+    transform: scale(1.10);
+    border-radius: 50px;
+    transition: all .8s ease-in-out;
+    box-shadow: 0px 0px 15px 15px #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
+    }
+    .inicio{
+        position: relative;
+        left: 51.5%;
+        margin-top: 30vh;
+        
+    }
+        
+   
+}

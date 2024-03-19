@@ -1,0 +1,455 @@
+body{
+    background: linear-gradient(black,rgb(0, 0, 0),rgb(3, 88, 3));
+    min-height: 140vh; /* Establece la altura del body al 100% del viewport height */   
+    margin: 0; /* Elimina el margen predeterminado del body */   
+    padding: 0; /* Elimina el relleno predeterminado del body */
+
+    
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 3vh;
+    background-color: rgba(90, 144, 114, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */  
+}
+
+.header-container p {
+    margin-left: 30vh;
+}
+
+.titulo{
+    display: grid;
+    text-align: center;
+    margin-left: 10vh; 
+}
+
+h3{
+    margin-top: -20px;
+}
+
+.timecode {
+    font-size: 6vh; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 5%;
+}
+
+.timecode::after {
+    content: "Code"; /* Agrega el texto "Code" después de "Time" */
+    color: greenyellow; /* Color verde para "Code" a */
+}
+
+.mundo{
+    color: greenyellow; 
+  
+}
+
+
+.timecode2::after {
+    content: "Code"; /* Agrega el texto "Code" después de "Time" */
+    color: greenyellow; /* Color verde para "Code" */
+    
+}
+
+.titulo2 {
+    display: grid;
+    text-align: center;
+    margin-left: 30vh;
+    margin-right: 10vh;
+}
+
+.timecode2 {
+    font-size: 6vh; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 5%; /* Margen superior */
+}
+
+.mundo2 {
+    color: greenyellow;
+}
+
+.mititulo {
+    font-size: 6vh; /* Tamaño de la fuente */
+    color: aliceblue; /* Color del texto */
+    margin-top: 1em; /* Ajuste del margen superior */
+    margin-right: 2vh;
+    letter-spacing: 20px;
+    
+}
+
+.principal{
+    position: relative;
+    left: 20vh;
+    top: 1vh;
+    background-color: rgba(223, 223, 223, 0.664);
+    width: 30%;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 5vh;
+    margin: 20px;
+    justify-content: center;
+    text-align: justify;
+    
+}
+p{
+    font-size: 2.5vh;
+    margin: 20px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.Eventos{
+    position: relative;
+    color: aliceblue;
+    font-size: 4vh;
+    margin-left: 10vh;
+}
+
+.video{
+    position: relative;
+
+    margin-left: 40%;
+
+    margin-top: -390px;
+    width: 1100px;
+    height: 350px;
+   
+}
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.inicio{
+
+    position: relative;
+    left: 45%;
+    
+    margin-top: 20vh;
+
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/* EL RESPONSIVE */
+
+/* Para pantalla de 16 a 27 pulgadas */
+
+@media only screen and (max-width: 1800px) {
+
+    body {
+        background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
+        min-height: 160vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3vh;
+        background-color: rgba(90, 144, 114, 0.4);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 255, 115, 0.855);
+    }
+    
+    .header-container p {
+        margin-left: 5%;
+    }
+    
+    .titulo {
+        text-align: center;
+        margin: 5vh;
+    }
+    
+    h3 {
+        margin-top: -20px;
+    }
+    
+    .timecode {
+        font-size: 6vh;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+    
+    .timecode::after {
+        content: "Code";
+        color: greenyellow;
+    }
+    
+    .mundo {
+        color: greenyellow;
+    }
+    
+    .titulo2 {
+        text-align: center;
+        margin: 5vh;
+    }
+    
+    .timecode2 {
+        font-size: 6vh;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+    
+    .timecode2::after {
+        content: "Code";
+        color: greenyellow;
+    }
+    
+    .mundo2 {
+        color: greenyellow;
+    }
+    
+    .mititulo {
+        font-size: 6vh;
+        color: aliceblue;
+        margin-top: 1em;
+        margin-right: 2vh;
+        letter-spacing: 20px;
+    }
+    
+    .principal {
+        position: relative;
+        margin: 2vh 5% 2vh 5%;
+        border-radius: 10px;
+        left: 1vh;
+    }
+    
+    h1 {
+        font-size: 5vh;
+        margin: 20px;
+        text-align: justify;
+    }
+    
+    p {
+        font-size: 2.5vh;
+        margin: 20px;
+        text-align: justify;
+    }
+    
+    .Eventos {
+        color: aliceblue;
+        font-size: 4vh;
+        margin: 5vh;
+    }
+    
+    iframe {
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+        margin-left: 10vh;
+        margin-top: -12vh;
+    }
+    
+    a {
+        position: relative;
+        margin: 2vh auto;
+        display: block;
+    }
+    
+    .video{
+
+
+    }
+
+
+    .inicio{
+
+        position: relative;
+        margin-right: 7vh;
+    }
+
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/* Para Tablet (Ipad Mini)*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+      body {
+        background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
+        min-height: 190vh;
+        
+
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 2vh;
+        align-items: center;   
+    }
+
+    .header-container p {
+        margin: 10px 0;
+    }
+
+    .titulo, .titulo2 {
+        margin: 5vh 0;
+    }
+
+    .timecode, .timecode2 {
+        font-size: 4vh;
+    }
+
+    .principal {
+        position: relative;
+        width: 32em;
+        margin: 2em;
+        flex-direction: column;
+        left: 11%;
+        
+    }
+
+    h1, p {
+        font-size: 3vh;
+    }
+
+    .Eventos {
+        text-align: center;
+        font-size: 3vh;
+        margin-right: 17vh;
+        left: 60px;
+    }
+
+     
+    .video{
+        position: relative;
+        margin-left: -31em;
+        margin-top: 10em;
+        width: 1580px;
+        height: 400px;
+       
+    }
+    
+   .inicio{
+
+    margin-bottom: 6em;
+
+   }
+    
+    
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/* Para movil (Samsun Galaxy A12) */
+
+@media only screen and (max-width: 767px) {
+    
+    body {
+        background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
+        min-height: 190vh;
+        width: auto;
+    
+    }
+    
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 3vh;
+        background-color: rgba(90, 144, 114, 0.4);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 255, 115, 0.855);
+    }
+    
+    .header-container p {
+        margin: 10px 0;
+    }
+    
+    .titulo, .titulo2 {
+        text-align: center;
+        margin: 5vh 0;
+    }
+    
+    h3 {
+        margin-top: -20px;
+    }
+    
+    .timecode, .timecode2 {
+        font-size: 4vh;
+        margin-top: 5%;
+    }
+    
+    .timecode::after, .timecode2::after {
+        content: "Code";
+        color: greenyellow;
+    }
+    
+    .mundo, .mundo2 {
+        color: greenyellow;
+    }
+    
+    .mititulo {
+        font-size: 4vh;
+        color: aliceblue;
+        margin-top: 1em;
+        margin-right: 2vh;
+        letter-spacing: 10px;
+        text-align: center;
+    }
+    
+    .principal {
+        position: relative;
+        left: 3%;
+        border-radius: 10px;
+        width: 80%; /* Ajusta el ancho según tus necesidades */
+    }
+    
+    h1 {
+        font-size: 4vh;
+        margin: 20px;
+        text-align: justify;
+    }
+    
+    p {
+        font-size: 2vh;
+        margin: 20px;
+        text-align: justify;
+    }
+    
+
+    .Eventos {
+        color: aliceblue;
+        font-size: 3vh;
+        margin: 5vh 0;
+        text-align: center;
+    }
+    
+    .video{
+        position: relative;
+        margin-left: -72%;
+        margin-top: 10em;
+        width: 725px;
+        height: 180px;
+       
+    }
+    
+  
+    .inicio {
+        position: relative;
+        margin-left: -2em;
+        
+        margin-bottom: 5em;
+    }
+   
+}
+
+
